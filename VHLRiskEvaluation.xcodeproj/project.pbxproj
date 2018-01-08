@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF82800C2003BF84003856C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82800B2003BF84003856C6 /* AppDelegate.m */; };
+		BF82800F2003BF84003856C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82800E2003BF84003856C6 /* ViewController.m */; };
+		BF8280122003BF84003856C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8280102003BF84003856C6 /* Main.storyboard */; };
+		BF8280142003BF84003856C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8280132003BF84003856C6 /* Assets.xcassets */; };
+		BF8280172003BF84003856C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8280152003BF84003856C6 /* LaunchScreen.storyboard */; };
+		BF82801A2003BF84003856C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8280192003BF84003856C6 /* main.m */; };
+		BF8280242003BF84003856C6 /* VHLRiskEvaluationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8280232003BF84003856C6 /* VHLRiskEvaluationTests.m */; };
+		BF82802F2003BF84003856C6 /* VHLRiskEvaluationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82802E2003BF84003856C6 /* VHLRiskEvaluationUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF8280202003BF84003856C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF827FFF2003BF84003856C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8280062003BF84003856C6;
+			remoteInfo = VHLRiskEvaluation;
+		};
+		BF82802B2003BF84003856C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF827FFF2003BF84003856C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF8280062003BF84003856C6;
+			remoteInfo = VHLRiskEvaluation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF8280072003BF84003856C6 /* VHLRiskEvaluation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHLRiskEvaluation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF82800A2003BF84003856C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF82800B2003BF84003856C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF82800D2003BF84003856C6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BF82800E2003BF84003856C6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF8280112003BF84003856C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF8280132003BF84003856C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8280162003BF84003856C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF8280182003BF84003856C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8280192003BF84003856C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF82801F2003BF84003856C6 /* VHLRiskEvaluationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VHLRiskEvaluationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8280232003BF84003856C6 /* VHLRiskEvaluationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationTests.m; sourceTree = "<group>"; };
+		BF8280252003BF84003856C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF82802A2003BF84003856C6 /* VHLRiskEvaluationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VHLRiskEvaluationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF82802E2003BF84003856C6 /* VHLRiskEvaluationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationUITests.m; sourceTree = "<group>"; };
+		BF8280302003BF84003856C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF8280042003BF84003856C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF82801C2003BF84003856C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8280272003BF84003856C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF827FFE2003BF84003856C6 = {
+			isa = PBXGroup;
+			children = (
+				BF8280092003BF84003856C6 /* VHLRiskEvaluation */,
+				BF8280222003BF84003856C6 /* VHLRiskEvaluationTests */,
+				BF82802D2003BF84003856C6 /* VHLRiskEvaluationUITests */,
+				BF8280082003BF84003856C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF8280082003BF84003856C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF8280072003BF84003856C6 /* VHLRiskEvaluation.app */,
+				BF82801F2003BF84003856C6 /* VHLRiskEvaluationTests.xctest */,
+				BF82802A2003BF84003856C6 /* VHLRiskEvaluationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF8280092003BF84003856C6 /* VHLRiskEvaluation */ = {
+			isa = PBXGroup;
+			children = (
+				BF82800A2003BF84003856C6 /* AppDelegate.h */,
+				BF82800B2003BF84003856C6 /* AppDelegate.m */,
+				BF82800D2003BF84003856C6 /* ViewController.h */,
+				BF82800E2003BF84003856C6 /* ViewController.m */,
+				BF8280102003BF84003856C6 /* Main.storyboard */,
+				BF8280132003BF84003856C6 /* Assets.xcassets */,
+				BF8280152003BF84003856C6 /* LaunchScreen.storyboard */,
+				BF8280182003BF84003856C6 /* Info.plist */,
+				BF8280192003BF84003856C6 /* main.m */,
+			);
+			path = VHLRiskEvaluation;
+			sourceTree = "<group>";
+		};
+		BF8280222003BF84003856C6 /* VHLRiskEvaluationTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8280232003BF84003856C6 /* VHLRiskEvaluationTests.m */,
+				BF8280252003BF84003856C6 /* Info.plist */,
+			);
+			path = VHLRiskEvaluationTests;
+			sourceTree = "<group>";
+		};
+		BF82802D2003BF84003856C6 /* VHLRiskEvaluationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF82802E2003BF84003856C6 /* VHLRiskEvaluationUITests.m */,
+				BF8280302003BF84003856C6 /* Info.plist */,
+			);
+			path = VHLRiskEvaluationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF8280062003BF84003856C6 /* VHLRiskEvaluation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8280332003BF84003856C6 /* Build configuration list for PBXNativeTarget "VHLRiskEvaluation" */;
+			buildPhases = (
+				BF8280032003BF84003856C6 /* Sources */,
+				BF8280042003BF84003856C6 /* Frameworks */,
+				BF8280052003BF84003856C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VHLRiskEvaluation;
+			productName = VHLRiskEvaluation;
+			productReference = BF8280072003BF84003856C6 /* VHLRiskEvaluation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF82801E2003BF84003856C6 /* VHLRiskEvaluationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8280362003BF84003856C6 /* Build configuration list for PBXNativeTarget "VHLRiskEvaluationTests" */;
+			buildPhases = (
+				BF82801B2003BF84003856C6 /* Sources */,
+				BF82801C2003BF84003856C6 /* Frameworks */,
+				BF82801D2003BF84003856C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8280212003BF84003856C6 /* PBXTargetDependency */,
+			);
+			name = VHLRiskEvaluationTests;
+			productName = VHLRiskEvaluationTests;
+			productReference = BF82801F2003BF84003856C6 /* VHLRiskEvaluationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF8280292003BF84003856C6 /* VHLRiskEvaluationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8280392003BF84003856C6 /* Build configuration list for PBXNativeTarget "VHLRiskEvaluationUITests" */;
+			buildPhases = (
+				BF8280262003BF84003856C6 /* Sources */,
+				BF8280272003BF84003856C6 /* Frameworks */,
+				BF8280282003BF84003856C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF82802C2003BF84003856C6 /* PBXTargetDependency */,
+			);
+			name = VHLRiskEvaluationUITests;
+			productName = VHLRiskEvaluationUITests;
+			productReference = BF82802A2003BF84003856C6 /* VHLRiskEvaluationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF827FFF2003BF84003856C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Darnel Studio";
+				TargetAttributes = {
+					BF8280062003BF84003856C6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BF82801E2003BF84003856C6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF8280062003BF84003856C6;
+					};
+					BF8280292003BF84003856C6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF8280062003BF84003856C6;
+					};
+				};
+			};
+			buildConfigurationList = BF8280022003BF84003856C6 /* Build configuration list for PBXProject "VHLRiskEvaluation" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF827FFE2003BF84003856C6;
+			productRefGroup = BF8280082003BF84003856C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF8280062003BF84003856C6 /* VHLRiskEvaluation */,
+				BF82801E2003BF84003856C6 /* VHLRiskEvaluationTests */,
+				BF8280292003BF84003856C6 /* VHLRiskEvaluationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF8280052003BF84003856C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8280172003BF84003856C6 /* LaunchScreen.storyboard in Resources */,
+				BF8280142003BF84003856C6 /* Assets.xcassets in Resources */,
+				BF8280122003BF84003856C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF82801D2003BF84003856C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8280282003BF84003856C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF8280032003BF84003856C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82800F2003BF84003856C6 /* ViewController.m in Sources */,
+				BF82801A2003BF84003856C6 /* main.m in Sources */,
+				BF82800C2003BF84003856C6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF82801B2003BF84003856C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8280242003BF84003856C6 /* VHLRiskEvaluationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8280262003BF84003856C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF82802F2003BF84003856C6 /* VHLRiskEvaluationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF8280212003BF84003856C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8280062003BF84003856C6 /* VHLRiskEvaluation */;
+			targetProxy = BF8280202003BF84003856C6 /* PBXContainerItemProxy */;
+		};
+		BF82802C2003BF84003856C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF8280062003BF84003856C6 /* VHLRiskEvaluation */;
+			targetProxy = BF82802B2003BF84003856C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF8280102003BF84003856C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8280112003BF84003856C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8280152003BF84003856C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8280162003BF84003856C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8280312003BF84003856C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF8280322003BF84003856C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8280342003BF84003856C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYG5F947FP;
+				INFOPLIST_FILE = VHLRiskEvaluation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF8280352003BF84003856C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYG5F947FP;
+				INFOPLIST_FILE = VHLRiskEvaluation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF8280372003BF84003856C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYG5F947FP;
+				INFOPLIST_FILE = VHLRiskEvaluationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VHLRiskEvaluation.app/VHLRiskEvaluation";
+			};
+			name = Debug;
+		};
+		BF8280382003BF84003856C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYG5F947FP;
+				INFOPLIST_FILE = VHLRiskEvaluationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VHLRiskEvaluation.app/VHLRiskEvaluation";
+			};
+			name = Release;
+		};
+		BF82803A2003BF84003856C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYG5F947FP;
+				INFOPLIST_FILE = VHLRiskEvaluationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VHLRiskEvaluation;
+			};
+			name = Debug;
+		};
+		BF82803B2003BF84003856C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WYG5F947FP;
+				INFOPLIST_FILE = VHLRiskEvaluationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VHLRiskEvaluation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF8280022003BF84003856C6 /* Build configuration list for PBXProject "VHLRiskEvaluation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8280312003BF84003856C6 /* Debug */,
+				BF8280322003BF84003856C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8280332003BF84003856C6 /* Build configuration list for PBXNativeTarget "VHLRiskEvaluation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8280342003BF84003856C6 /* Debug */,
+				BF8280352003BF84003856C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8280362003BF84003856C6 /* Build configuration list for PBXNativeTarget "VHLRiskEvaluationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8280372003BF84003856C6 /* Debug */,
+				BF8280382003BF84003856C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8280392003BF84003856C6 /* Build configuration list for PBXNativeTarget "VHLRiskEvaluationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF82803A2003BF84003856C6 /* Debug */,
+				BF82803B2003BF84003856C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF827FFF2003BF84003856C6 /* Project object */;
+}
