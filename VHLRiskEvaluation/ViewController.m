@@ -12,7 +12,7 @@
 //
 #import "VHLNavigation.h"
 
-@interface ViewController () <VHLRiskEvaluationViewControllerDelegate>
+@interface ViewController () <VHLRiskEvaluationViewControllerDelegate, VHLRiskEvaluationResultViewControllerDelegate>
 
 @end
 
@@ -52,7 +52,18 @@
     [riskVC vhl_setNavBarTintColor:[UIColor whiteColor]];
     [self.navigationController pushViewController:riskVC animated:YES];
 }
-- (void)riskEvaluationFinish:(NSMutableArray<VHLRiskEvaluationModel *> *)questionArray {
+
+- (void)goDT1 {
+    VHLRiskEvaluationResultViewController *riskResultVC = [[VHLRiskEvaluationResultViewController alloc] init];
+    [riskResultVC vhl_setNavBackgroundColor:[UIColor colorWithRed:0.18 green:0.25 blue:0.39 alpha:1.00]];
+    [riskResultVC vhl_setNavBarTitleColor:[UIColor whiteColor]];
+    [riskResultVC vhl_setStatusBarStyle:UIStatusBarStyleLightContent];
+    [riskResultVC vhl_setNavBarTintColor:[UIColor whiteColor]];
+    [self.navigationController pushViewController:riskResultVC animated:YES];
+}
+#pragma mark - delegate
+- (void)riskEvaluationFinish:(NSMutableArray<VHLRiskEvaluationModel *> *)questionArray vc:(VHLRiskEvaluationViewController *)reVC{
+    
     int sumScore = 0;
     for (VHLRiskEvaluationModel *model in questionArray) {
         sumScore += model.totalScore;
@@ -63,18 +74,37 @@
     [riskResultVC vhl_setNavBarTitleColor:[UIColor whiteColor]];
     [riskResultVC vhl_setStatusBarStyle:UIStatusBarStyleLightContent];
     [riskResultVC vhl_setNavBarTintColor:[UIColor whiteColor]];
-    [self.navigationController pushViewController:riskResultVC animated:NO];
+    [riskResultVC setScore:35];
+    riskResultVC.questionArray = questionArray;
+    
+    riskResultVC.delegate = self;
+    
+    // pop 再 push
+    NSMutableArray *arrView = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+    int index = (int)[arrView indexOfObject:reVC];
+    [arrView removeObjectAtIndex:index];
+    [arrView addObject:riskResultVC];
+    [self.navigationController setViewControllers:arrView animated:YES];
 }
-
-- (void)goDT1 {
-    VHLRiskEvaluationResultViewController *riskResultVC = [[VHLRiskEvaluationResultViewController alloc] init];
-    [riskResultVC vhl_setNavBackgroundColor:[UIColor colorWithRed:0.18 green:0.25 blue:0.39 alpha:1.00]];
-    [riskResultVC vhl_setNavBarTitleColor:[UIColor whiteColor]];
-    [riskResultVC vhl_setStatusBarStyle:UIStatusBarStyleLightContent];
-    [riskResultVC vhl_setNavBarTintColor:[UIColor whiteColor]];
-    [self.navigationController pushViewController:riskResultVC animated:YES];
+- (void)restartRiskEvaluation:(NSMutableArray<VHLRiskEvaluationModel *> *)questionArray vc:(VHLRiskEvaluationResultViewController *)riskResultVC {
+    NSMutableArray *array = [VHLRiskEvaluationModel modelArrayWithDicArray:[self modelData]];
+    VHLRiskEvaluationViewController *riskVC = [[VHLRiskEvaluationViewController alloc] init];
+    riskVC.questionArray = questionArray?:array;
+    riskVC.title = @"风险评测";
+    riskVC.delegate = self;
+    [riskVC vhl_setNavBackgroundColor:[UIColor colorWithRed:0.18 green:0.25 blue:0.39 alpha:1.00]];
+    [riskVC vhl_setNavBarTitleColor:[UIColor whiteColor]];
+    [riskVC vhl_setStatusBarStyle:UIStatusBarStyleLightContent];
+    [riskVC vhl_setNavBarTintColor:[UIColor whiteColor]];
+    
+    // pop 再 push
+    NSMutableArray *arrView = [NSMutableArray arrayWithArray:self.navigationController.viewControllers];
+    int index = (int)[arrView indexOfObject:riskResultVC];
+    [arrView removeObjectAtIndex:index];
+    [arrView addObject:riskVC];
+    [self.navigationController setViewControllers:arrView animated:YES];
 }
-
+// ------------------------------------------------------------------------
 /**
     答题信息
  */
@@ -94,83 +124,87 @@
                                @{@"answerTitle":@"已婚无子女",@"isSelected":@(NO),@"score": @1},
                                @{@"answerTitle":@"已婚有子女",@"isSelected":@(NO),@"score": @1},
                                @{@"answerTitle":@"已婚有子女",@"isSelected":@(NO),@"score": @1},
-                               ]},
-                     @{@"index": @3,
-                       @"question":@"您的工作是",
-                       @"maxSelectCount": @(3),
-                       @"answers": @[
-                               @{@"answerTitle":@"企业负责人/企业主",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"专业技术人员",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"高/中阶主管",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"劳动工作者",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"一般职员",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"家庭主妇",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"基层主管",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"学生",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"退休",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"其他",@"isSelected":@(NO)},
-                               ]},
-                     @{@"index": @4,
-                       @"question":@"您的家庭平均收入是",
-                       @"answers": @[
-                               @{@"answerTitle":@"10万以下",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"10-20万",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"20-50万",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"50-100万",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"100万以上",@"isSelected":@(NO)},
-                               ]},
-                     @{@"index": @5,
-                       @"question":@"您通过网络获取信息的情况",
-                       @"answers": @[
-                               @{@"answerTitle":@"经常",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"时常",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"偶尔",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"从不",@"isSelected":@(NO),@"score": @5},
-                               ]},
-                     @{@"index": @6,
-                       @"question":@"您的投资资金来源",
-                       @"answers": @[
-                               @{@"answerTitle":@"薪水/固定收入",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"退休金",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"闲置资金",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"投资收益",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"其他基金公司转入",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"其他",@"isSelected":@(NO)},
-                               ]},
-                     @{@"index": @7,
-                       @"question":@"您互联网熟悉情况",
-                       @"answers": @[
-                               @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
-                               ]},
-                     @{@"index": @8,
-                       @"question":@"您互联网熟悉情况",
-                       @"answers": @[
-                               @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
-                               ]},
-                     @{@"index": @9,
-                       @"question":@"您互联网熟悉情况",
-                       @"answers": @[
-                               @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
-                               ]},
-                     @{@"index": @10,
-                       @"question":@"您互联网熟悉情况",
-                       @"answers": @[
-                               @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
-                               @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
-                               ]},
+                               ]}
                      ];
     return arr;
 }
+/**
+ 
+ ,
+ @{@"index": @3,
+ @"question":@"您的工作是",
+ @"maxSelectCount": @(3),
+ @"answers": @[
+ @{@"answerTitle":@"企业负责人/企业主",@"isSelected":@(NO)},
+ @{@"answerTitle":@"专业技术人员",@"isSelected":@(NO)},
+ @{@"answerTitle":@"高/中阶主管",@"isSelected":@(NO)},
+ @{@"answerTitle":@"劳动工作者",@"isSelected":@(NO)},
+ @{@"answerTitle":@"一般职员",@"isSelected":@(NO)},
+ @{@"answerTitle":@"家庭主妇",@"isSelected":@(NO)},
+ @{@"answerTitle":@"基层主管",@"isSelected":@(NO)},
+ @{@"answerTitle":@"学生",@"isSelected":@(NO)},
+ @{@"answerTitle":@"退休",@"isSelected":@(NO)},
+ @{@"answerTitle":@"其他",@"isSelected":@(NO)},
+ ]},
+ @{@"index": @4,
+ @"question":@"您的家庭平均收入是",
+ @"answers": @[
+ @{@"answerTitle":@"10万以下",@"isSelected":@(NO)},
+ @{@"answerTitle":@"10-20万",@"isSelected":@(NO)},
+ @{@"answerTitle":@"20-50万",@"isSelected":@(NO)},
+ @{@"answerTitle":@"50-100万",@"isSelected":@(NO)},
+ @{@"answerTitle":@"100万以上",@"isSelected":@(NO)},
+ ]},
+ @{@"index": @5,
+ @"question":@"您通过网络获取信息的情况",
+ @"answers": @[
+ @{@"answerTitle":@"经常",@"isSelected":@(NO)},
+ @{@"answerTitle":@"时常",@"isSelected":@(NO)},
+ @{@"answerTitle":@"偶尔",@"isSelected":@(NO)},
+ @{@"answerTitle":@"从不",@"isSelected":@(NO),@"score": @5},
+ ]},
+ @{@"index": @6,
+ @"question":@"您的投资资金来源",
+ @"answers": @[
+ @{@"answerTitle":@"薪水/固定收入",@"isSelected":@(NO)},
+ @{@"answerTitle":@"退休金",@"isSelected":@(NO)},
+ @{@"answerTitle":@"闲置资金",@"isSelected":@(NO)},
+ @{@"answerTitle":@"投资收益",@"isSelected":@(NO)},
+ @{@"answerTitle":@"其他基金公司转入",@"isSelected":@(NO)},
+ @{@"answerTitle":@"其他",@"isSelected":@(NO)},
+ ]},
+ @{@"index": @7,
+ @"question":@"您互联网熟悉情况",
+ @"answers": @[
+ @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
+ ]},
+ @{@"index": @8,
+ @"question":@"您互联网熟悉情况",
+ @"answers": @[
+ @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
+ ]},
+ @{@"index": @9,
+ @"question":@"您互联网熟悉情况",
+ @"answers": @[
+ @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
+ ]},
+ @{@"index": @10,
+ @"question":@"您互联网熟悉情况",
+ @"answers": @[
+ @{@"answerTitle":@"非常熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"不太熟悉",@"isSelected":@(NO)},
+ @{@"answerTitle":@"从未接触",@"isSelected":@(NO)},
+ ]},
+ */
 
 @end

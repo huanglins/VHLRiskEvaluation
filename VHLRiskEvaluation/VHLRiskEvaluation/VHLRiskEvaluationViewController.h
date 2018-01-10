@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "VHLRiskEvaluationModel.h"
 
+@class VHLRiskEvaluationViewController;
 @protocol VHLRiskEvaluationViewControllerDelegate<NSObject>
 
 // 答题完成点击
-- (void)riskEvaluationFinish:(NSMutableArray<VHLRiskEvaluationModel *> *)questionArray;
+- (void)riskEvaluationFinish:(NSMutableArray<VHLRiskEvaluationModel *> *)questionArray vc:(VHLRiskEvaluationViewController *)reVC;
 
 @end
 

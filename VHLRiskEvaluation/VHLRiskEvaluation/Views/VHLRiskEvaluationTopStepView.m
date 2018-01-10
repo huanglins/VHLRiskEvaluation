@@ -59,10 +59,10 @@
     return self;
 }
 // 
-- (void)setLeftValue:(NSString *)leftValue rightValue:(NSString *)rightValue progress:(CGFloat)progressValue {
+- (void)setLeftValue:(NSString *)leftValue rightValue:(NSString *)rightValue progress:(CGFloat)progressValue pAnimation:(BOOL)isAnimation {
     self.leftLabel.text = leftValue;
     self.rightLabel.text = rightValue;
-    [self.progressView setProgress:progressValue animated:YES];
+    [self.progressView setProgress:progressValue animated:isAnimation];
 }
 
 @end

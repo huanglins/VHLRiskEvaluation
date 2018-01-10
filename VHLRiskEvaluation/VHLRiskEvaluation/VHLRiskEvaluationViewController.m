@@ -30,7 +30,7 @@
     _topStepView = [[VHLRiskEvaluationTopStepView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 60)];
     [self.view addSubview:_topStepView];
     
-    _contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 60, self.view.width, self.view.height - 60 - 20 - self.navigationController.navigationBar.height - [UIApplication sharedApplication].statusBarFrame.size.height)];
+    _contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 60, self.view.width, self.view.height - 60 - 40 - self.navigationController.navigationBar.height - [UIApplication sharedApplication].statusBarFrame.size.height)];
     _contentScrollView.pagingEnabled = YES;
     _contentScrollView.bounces = NO;
     _contentScrollView.scrollEnabled = NO;
@@ -50,7 +50,7 @@
     }
     self.contentScrollView.contentSize = CGSizeMake(self.view.width * self.questionArray.count, self.contentScrollView.height);
     //
-    [self upQuestionClick:nil cIndex:0];
+    [self upQuestionClick:nil cIndex:-1];
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
@@ -73,16 +73,16 @@
     VHLRiskEvaluationModel *rightQuestionModel = [self.questionArray lastObject];
     NSString *leftStr = [NSString stringWithFormat:@"%ld", leftQuestionModel.index];
     NSString *rightStr = [NSString stringWithFormat:@"%ld", rightQuestionModel.index];
-    [self.topStepView setLeftValue:leftStr rightValue:rightStr progress:((tempValue + 1) - 1) / (CGFloat)self.questionArray.count];
+    [self.topStepView setLeftValue:leftStr rightValue:rightStr progress:(tempValue + 1) / (CGFloat)self.questionArray.count pAnimation:(index < 0?NO:YES)];
     //
    [self.contentScrollView setContentOffset:CGPointMake(self.contentScrollView.width * tempValue, 0) animated:YES];
 }
 - (void)nextQuestionClick:(VHLRiskEvaluationModel *)questionModel cIndex:(int)index{
     if (index >= self.questionArray.count - 1) {
         // 点击完成
-        if ([self.delegate respondsToSelector:@selector(riskEvaluationFinish:)]) {
-            [self.navigationController popViewControllerAnimated:NO];
-            [self.delegate riskEvaluationFinish:self.questionArray];
+        if ([self.delegate respondsToSelector:@selector(riskEvaluationFinish:vc:)]) {
+            __weak typeof(self) weakSelf = self;
+            [self.delegate riskEvaluationFinish:self.questionArray vc:weakSelf];
         }
         return;
     }
@@ -90,7 +90,7 @@
     VHLRiskEvaluationModel *rightQuestionModel = [self.questionArray lastObject];
     NSString *leftStr = [NSString stringWithFormat:@"%ld", leftQuestionModel.index];
     NSString *rightStr = [NSString stringWithFormat:@"%ld", rightQuestionModel.index];
-    [self.topStepView setLeftValue:leftStr rightValue:rightStr progress:((index + 1) + 1) / (CGFloat)self.questionArray.count];
+    [self.topStepView setLeftValue:leftStr rightValue:rightStr progress:((index + 1) + 1) / (CGFloat)self.questionArray.count pAnimation:YES];
     //
     [self.contentScrollView setContentOffset:CGPointMake(self.contentScrollView.width * (index + 1), 0) animated: YES];
 }

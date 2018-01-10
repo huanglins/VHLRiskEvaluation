@@ -15,5 +15,6 @@
 @property (nonatomic, strong) UIProgressView *progressView;
 
 //
-- (void)setLeftValue:(NSString *)leftValue rightValue:(NSString *)rightValue progress:(CGFloat)progressValue;
+- (void)setLeftValue:(NSString *)leftValue rightValue:(NSString *)rightValue progress:(CGFloat)progressValue pAnimation:(BOOL)isAnimation;
+
 @end

@@ -171,20 +171,20 @@
 		BF77E3F12005FEE40021BB72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				BF77E3F22005FEE40021BB72 /* risk_result_top_2@2x.png */,
 				BF77E3F32005FEE40021BB72 /* vhl_answer_selected_1@2x.png */,
 				BF77E3F42005FEE40021BB72 /* vhl_answer_selected_1@3x.png */,
-				BF77E3F52005FEE40021BB72 /* risk_result_top_2@3x.png */,
+				BF77E3FF2005FEE40021BB72 /* risk_result_top_1@2x.png */,
 				BF77E3F62005FEE40021BB72 /* risk_result_top_1@3x.png */,
+				BF77E3F22005FEE40021BB72 /* risk_result_top_2@2x.png */,
+				BF77E3F52005FEE40021BB72 /* risk_result_top_2@3x.png */,
+				BF77E3FA2005FEE40021BB72 /* risk_result_top_3@2x.png */,
+				BF77E3FB2005FEE40021BB72 /* risk_result_top_3@3x.png */,
 				BF77E3F72005FEE40021BB72 /* risk_start_button_bg@2x.png */,
 				BF77E3F82005FEE40021BB72 /* vhl_answer_selected_0@2x.png */,
 				BF77E3F92005FEE40021BB72 /* risk_start_top_info@2x.png */,
-				BF77E3FA2005FEE40021BB72 /* risk_result_top_3@2x.png */,
-				BF77E3FB2005FEE40021BB72 /* risk_result_top_3@3x.png */,
 				BF77E3FC2005FEE40021BB72 /* risk_start_top_info@3x.png */,
 				BF77E3FD2005FEE40021BB72 /* vhl_answer_selected_0@3x.png */,
 				BF77E3FE2005FEE40021BB72 /* risk_start_button_bg@3x.png */,
-				BF77E3FF2005FEE40021BB72 /* risk_result_top_1@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
