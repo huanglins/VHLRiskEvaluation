@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5CB9D720049E3E004FF2C1 /* VHLRiskEvaluationTopStepView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5CB9D620049E3E004FF2C1 /* VHLRiskEvaluationTopStepView.m */; };
+		BF5CB9DB2004A2D2004FF2C1 /* UIView+VHLAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5CB9D92004A2D2004FF2C1 /* UIView+VHLAdd.m */; };
+		BF77E3D82005AAF30021BB72 /* VHLRiskEvaluationQuestionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF77E3D72005AAF30021BB72 /* VHLRiskEvaluationQuestionView.m */; };
+		BF77E3E02005B62E0021BB72 /* VHLNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF77E3DF2005B62E0021BB72 /* VHLNavigation.m */; };
+		BF77E3ED2005C04E0021BB72 /* VHLRiskAnswerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF77E3EC2005C04E0021BB72 /* VHLRiskAnswerCell.m */; };
+		BF77E3F02005FD780021BB72 /* VHLRiskEvaluationResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF77E3EF2005FD780021BB72 /* VHLRiskEvaluationResultViewController.m */; };
+		BF77E4002005FEE40021BB72 /* risk_result_top_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F22005FEE40021BB72 /* risk_result_top_2@2x.png */; };
+		BF77E4012005FEE40021BB72 /* vhl_answer_selected_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F32005FEE40021BB72 /* vhl_answer_selected_1@2x.png */; };
+		BF77E4022005FEE40021BB72 /* vhl_answer_selected_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F42005FEE40021BB72 /* vhl_answer_selected_1@3x.png */; };
+		BF77E4032005FEE40021BB72 /* risk_result_top_2@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F52005FEE40021BB72 /* risk_result_top_2@3x.png */; };
+		BF77E4042005FEE40021BB72 /* risk_result_top_1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F62005FEE40021BB72 /* risk_result_top_1@3x.png */; };
+		BF77E4052005FEE40021BB72 /* risk_start_button_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F72005FEE40021BB72 /* risk_start_button_bg@2x.png */; };
+		BF77E4062005FEE40021BB72 /* vhl_answer_selected_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F82005FEE40021BB72 /* vhl_answer_selected_0@2x.png */; };
+		BF77E4072005FEE40021BB72 /* risk_start_top_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3F92005FEE40021BB72 /* risk_start_top_info@2x.png */; };
+		BF77E4082005FEE40021BB72 /* risk_result_top_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3FA2005FEE40021BB72 /* risk_result_top_3@2x.png */; };
+		BF77E4092005FEE40021BB72 /* risk_result_top_3@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3FB2005FEE40021BB72 /* risk_result_top_3@3x.png */; };
+		BF77E40A2005FEE40021BB72 /* risk_start_top_info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3FC2005FEE40021BB72 /* risk_start_top_info@3x.png */; };
+		BF77E40B2005FEE40021BB72 /* vhl_answer_selected_0@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3FD2005FEE40021BB72 /* vhl_answer_selected_0@3x.png */; };
+		BF77E40C2005FEE40021BB72 /* risk_start_button_bg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3FE2005FEE40021BB72 /* risk_start_button_bg@3x.png */; };
+		BF77E40D2005FEE40021BB72 /* risk_result_top_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF77E3FF2005FEE40021BB72 /* risk_result_top_1@2x.png */; };
 		BF82800C2003BF84003856C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82800B2003BF84003856C6 /* AppDelegate.m */; };
 		BF82800F2003BF84003856C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82800E2003BF84003856C6 /* ViewController.m */; };
 		BF8280122003BF84003856C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8280102003BF84003856C6 /* Main.storyboard */; };
@@ -15,6 +35,8 @@
 		BF82801A2003BF84003856C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8280192003BF84003856C6 /* main.m */; };
 		BF8280242003BF84003856C6 /* VHLRiskEvaluationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8280232003BF84003856C6 /* VHLRiskEvaluationTests.m */; };
 		BF82802F2003BF84003856C6 /* VHLRiskEvaluationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82802E2003BF84003856C6 /* VHLRiskEvaluationUITests.m */; };
+		BF8280402003C019003856C6 /* VHLRiskEvaluationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF82803F2003C019003856C6 /* VHLRiskEvaluationModel.m */; };
+		BF8280432003C123003856C6 /* VHLRiskEvaluationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8280422003C123003856C6 /* VHLRiskEvaluationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +57,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF5CB9D520049E3E004FF2C1 /* VHLRiskEvaluationTopStepView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VHLRiskEvaluationTopStepView.h; sourceTree = "<group>"; };
+		BF5CB9D620049E3E004FF2C1 /* VHLRiskEvaluationTopStepView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationTopStepView.m; sourceTree = "<group>"; };
+		BF5CB9D92004A2D2004FF2C1 /* UIView+VHLAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VHLAdd.m"; sourceTree = "<group>"; };
+		BF5CB9DA2004A2D2004FF2C1 /* UIView+VHLAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VHLAdd.h"; sourceTree = "<group>"; };
+		BF77E3D62005AAF30021BB72 /* VHLRiskEvaluationQuestionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VHLRiskEvaluationQuestionView.h; sourceTree = "<group>"; };
+		BF77E3D72005AAF30021BB72 /* VHLRiskEvaluationQuestionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationQuestionView.m; sourceTree = "<group>"; };
+		BF77E3DE2005B62E0021BB72 /* VHLNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHLNavigation.h; sourceTree = "<group>"; };
+		BF77E3DF2005B62E0021BB72 /* VHLNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHLNavigation.m; sourceTree = "<group>"; };
+		BF77E3EB2005C04E0021BB72 /* VHLRiskAnswerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VHLRiskAnswerCell.h; sourceTree = "<group>"; };
+		BF77E3EC2005C04E0021BB72 /* VHLRiskAnswerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskAnswerCell.m; sourceTree = "<group>"; };
+		BF77E3EE2005FD780021BB72 /* VHLRiskEvaluationResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VHLRiskEvaluationResultViewController.h; sourceTree = "<group>"; };
+		BF77E3EF2005FD780021BB72 /* VHLRiskEvaluationResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationResultViewController.m; sourceTree = "<group>"; };
+		BF77E3F22005FEE40021BB72 /* risk_result_top_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_result_top_2@2x.png"; sourceTree = "<group>"; };
+		BF77E3F32005FEE40021BB72 /* vhl_answer_selected_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vhl_answer_selected_1@2x.png"; sourceTree = "<group>"; };
+		BF77E3F42005FEE40021BB72 /* vhl_answer_selected_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vhl_answer_selected_1@3x.png"; sourceTree = "<group>"; };
+		BF77E3F52005FEE40021BB72 /* risk_result_top_2@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_result_top_2@3x.png"; sourceTree = "<group>"; };
+		BF77E3F62005FEE40021BB72 /* risk_result_top_1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_result_top_1@3x.png"; sourceTree = "<group>"; };
+		BF77E3F72005FEE40021BB72 /* risk_start_button_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_start_button_bg@2x.png"; sourceTree = "<group>"; };
+		BF77E3F82005FEE40021BB72 /* vhl_answer_selected_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vhl_answer_selected_0@2x.png"; sourceTree = "<group>"; };
+		BF77E3F92005FEE40021BB72 /* risk_start_top_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_start_top_info@2x.png"; sourceTree = "<group>"; };
+		BF77E3FA2005FEE40021BB72 /* risk_result_top_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_result_top_3@2x.png"; sourceTree = "<group>"; };
+		BF77E3FB2005FEE40021BB72 /* risk_result_top_3@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_result_top_3@3x.png"; sourceTree = "<group>"; };
+		BF77E3FC2005FEE40021BB72 /* risk_start_top_info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_start_top_info@3x.png"; sourceTree = "<group>"; };
+		BF77E3FD2005FEE40021BB72 /* vhl_answer_selected_0@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "vhl_answer_selected_0@3x.png"; sourceTree = "<group>"; };
+		BF77E3FE2005FEE40021BB72 /* risk_start_button_bg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_start_button_bg@3x.png"; sourceTree = "<group>"; };
+		BF77E3FF2005FEE40021BB72 /* risk_result_top_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "risk_result_top_1@2x.png"; sourceTree = "<group>"; };
 		BF8280072003BF84003856C6 /* VHLRiskEvaluation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHLRiskEvaluation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF82800A2003BF84003856C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BF82800B2003BF84003856C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +99,10 @@
 		BF82802A2003BF84003856C6 /* VHLRiskEvaluationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VHLRiskEvaluationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF82802E2003BF84003856C6 /* VHLRiskEvaluationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationUITests.m; sourceTree = "<group>"; };
 		BF8280302003BF84003856C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF82803E2003C019003856C6 /* VHLRiskEvaluationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VHLRiskEvaluationModel.h; sourceTree = "<group>"; };
+		BF82803F2003C019003856C6 /* VHLRiskEvaluationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationModel.m; sourceTree = "<group>"; };
+		BF8280412003C123003856C6 /* VHLRiskEvaluationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VHLRiskEvaluationViewController.h; sourceTree = "<group>"; };
+		BF8280422003C123003856C6 /* VHLRiskEvaluationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VHLRiskEvaluationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +130,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF5CB9D420049E1F004FF2C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF5CB9D520049E3E004FF2C1 /* VHLRiskEvaluationTopStepView.h */,
+				BF5CB9D620049E3E004FF2C1 /* VHLRiskEvaluationTopStepView.m */,
+				BF77E3D62005AAF30021BB72 /* VHLRiskEvaluationQuestionView.h */,
+				BF77E3D72005AAF30021BB72 /* VHLRiskEvaluationQuestionView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF5CB9D82004A2D2004FF2C1 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				BF5CB9DA2004A2D2004FF2C1 /* UIView+VHLAdd.h */,
+				BF5CB9D92004A2D2004FF2C1 /* UIView+VHLAdd.m */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		BF77E3DD2005B62E0021BB72 /* VHLNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				BF77E3DE2005B62E0021BB72 /* VHLNavigation.h */,
+				BF77E3DF2005B62E0021BB72 /* VHLNavigation.m */,
+			);
+			path = VHLNavigation;
+			sourceTree = "<group>";
+		};
+		BF77E3EA2005C0350021BB72 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BF77E3EB2005C04E0021BB72 /* VHLRiskAnswerCell.h */,
+				BF77E3EC2005C04E0021BB72 /* VHLRiskAnswerCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		BF77E3F12005FEE40021BB72 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BF77E3F22005FEE40021BB72 /* risk_result_top_2@2x.png */,
+				BF77E3F32005FEE40021BB72 /* vhl_answer_selected_1@2x.png */,
+				BF77E3F42005FEE40021BB72 /* vhl_answer_selected_1@3x.png */,
+				BF77E3F52005FEE40021BB72 /* risk_result_top_2@3x.png */,
+				BF77E3F62005FEE40021BB72 /* risk_result_top_1@3x.png */,
+				BF77E3F72005FEE40021BB72 /* risk_start_button_bg@2x.png */,
+				BF77E3F82005FEE40021BB72 /* vhl_answer_selected_0@2x.png */,
+				BF77E3F92005FEE40021BB72 /* risk_start_top_info@2x.png */,
+				BF77E3FA2005FEE40021BB72 /* risk_result_top_3@2x.png */,
+				BF77E3FB2005FEE40021BB72 /* risk_result_top_3@3x.png */,
+				BF77E3FC2005FEE40021BB72 /* risk_start_top_info@3x.png */,
+				BF77E3FD2005FEE40021BB72 /* vhl_answer_selected_0@3x.png */,
+				BF77E3FE2005FEE40021BB72 /* risk_start_button_bg@3x.png */,
+				BF77E3FF2005FEE40021BB72 /* risk_result_top_1@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		BF827FFE2003BF84003856C6 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +212,8 @@
 		BF8280092003BF84003856C6 /* VHLRiskEvaluation */ = {
 			isa = PBXGroup;
 			children = (
+				BF77E3DD2005B62E0021BB72 /* VHLNavigation */,
+				BF82803C2003BFB7003856C6 /* VHLRiskEvaluation */,
 				BF82800A2003BF84003856C6 /* AppDelegate.h */,
 				BF82800B2003BF84003856C6 /* AppDelegate.m */,
 				BF82800D2003BF84003856C6 /* ViewController.h */,
@@ -130,6 +243,31 @@
 				BF8280302003BF84003856C6 /* Info.plist */,
 			);
 			path = VHLRiskEvaluationUITests;
+			sourceTree = "<group>";
+		};
+		BF82803C2003BFB7003856C6 /* VHLRiskEvaluation */ = {
+			isa = PBXGroup;
+			children = (
+				BF5CB9D82004A2D2004FF2C1 /* Vender */,
+				BF77E3F12005FEE40021BB72 /* Images */,
+				BF82803D2003C005003856C6 /* Models */,
+				BF77E3EA2005C0350021BB72 /* Cells */,
+				BF5CB9D420049E1F004FF2C1 /* Views */,
+				BF8280412003C123003856C6 /* VHLRiskEvaluationViewController.h */,
+				BF8280422003C123003856C6 /* VHLRiskEvaluationViewController.m */,
+				BF77E3EE2005FD780021BB72 /* VHLRiskEvaluationResultViewController.h */,
+				BF77E3EF2005FD780021BB72 /* VHLRiskEvaluationResultViewController.m */,
+			);
+			path = VHLRiskEvaluation;
+			sourceTree = "<group>";
+		};
+		BF82803D2003C005003856C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF82803E2003C019003856C6 /* VHLRiskEvaluationModel.h */,
+				BF82803F2003C019003856C6 /* VHLRiskEvaluationModel.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +376,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF77E40B2005FEE40021BB72 /* vhl_answer_selected_0@3x.png in Resources */,
 				BF8280172003BF84003856C6 /* LaunchScreen.storyboard in Resources */,
+				BF77E40C2005FEE40021BB72 /* risk_start_button_bg@3x.png in Resources */,
+				BF77E4052005FEE40021BB72 /* risk_start_button_bg@2x.png in Resources */,
+				BF77E40D2005FEE40021BB72 /* risk_result_top_1@2x.png in Resources */,
+				BF77E4072005FEE40021BB72 /* risk_start_top_info@2x.png in Resources */,
+				BF77E4012005FEE40021BB72 /* vhl_answer_selected_1@2x.png in Resources */,
+				BF77E4082005FEE40021BB72 /* risk_result_top_3@2x.png in Resources */,
 				BF8280142003BF84003856C6 /* Assets.xcassets in Resources */,
+				BF77E4092005FEE40021BB72 /* risk_result_top_3@3x.png in Resources */,
+				BF77E4022005FEE40021BB72 /* vhl_answer_selected_1@3x.png in Resources */,
+				BF77E4062005FEE40021BB72 /* vhl_answer_selected_0@2x.png in Resources */,
+				BF77E40A2005FEE40021BB72 /* risk_start_top_info@3x.png in Resources */,
 				BF8280122003BF84003856C6 /* Main.storyboard in Resources */,
+				BF77E4032005FEE40021BB72 /* risk_result_top_2@3x.png in Resources */,
+				BF77E4002005FEE40021BB72 /* risk_result_top_2@2x.png in Resources */,
+				BF77E4042005FEE40021BB72 /* risk_result_top_1@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +417,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF77E3D82005AAF30021BB72 /* VHLRiskEvaluationQuestionView.m in Sources */,
 				BF82800F2003BF84003856C6 /* ViewController.m in Sources */,
+				BF77E3E02005B62E0021BB72 /* VHLNavigation.m in Sources */,
+				BF5CB9DB2004A2D2004FF2C1 /* UIView+VHLAdd.m in Sources */,
 				BF82801A2003BF84003856C6 /* main.m in Sources */,
+				BF77E3F02005FD780021BB72 /* VHLRiskEvaluationResultViewController.m in Sources */,
+				BF5CB9D720049E3E004FF2C1 /* VHLRiskEvaluationTopStepView.m in Sources */,
+				BF8280432003C123003856C6 /* VHLRiskEvaluationViewController.m in Sources */,
 				BF82800C2003BF84003856C6 /* AppDelegate.m in Sources */,
+				BF8280402003C019003856C6 /* VHLRiskEvaluationModel.m in Sources */,
+				BF77E3ED2005C04E0021BB72 /* VHLRiskAnswerCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +593,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WYG5F947FP;
 				INFOPLIST_FILE = VHLRiskEvaluation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +608,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WYG5F947FP;
 				INFOPLIST_FILE = VHLRiskEvaluation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.vincents.VHLRiskEvaluation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
